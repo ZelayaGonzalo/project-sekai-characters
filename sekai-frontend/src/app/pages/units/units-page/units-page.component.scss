@@ -1,0 +1,13 @@
+.units-container{
+    position: relative;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .units{
+        align-self: flex-start;
+    }
+    .right{
+        align-self: flex-end;
+    }
+}

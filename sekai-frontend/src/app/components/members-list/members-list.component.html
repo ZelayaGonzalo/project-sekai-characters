@@ -1,0 +1,38 @@
+<div class="top">
+  <div class="logo">
+       <img [src]="logo">
+  </div>
+  <div class="members-container" [ngSwitch]="unitId">
+      <ul class="members" *ngSwitchCase="2">
+        <li  routerLink="/character/1"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 1}" src="https://i.ibb.co/mRznB74/Kohane-circle.webp"></li>
+        <li  routerLink="/character/2"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 2}" src="https://i.ibb.co/DfV7J7g/An-circle.webp"></li>
+        <li  routerLink="/character/3"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 3}" src="https://i.ibb.co/4f5rT26/Akito-circle.webp"></li>
+        <li  routerLink="/character/4"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 4}" src="https://i.ibb.co/5RDqC63/Toya-circle.webp"></li>
+      </ul>
+      <ul class="members" *ngSwitchCase="3">
+        <li routerLink="/character/5"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 5}"  src="https://i.ibb.co/CK86S3j/Ichika-circle.webp"></li>
+        <li routerLink="/character/6"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 6}" src="https://i.ibb.co/zxQ22Wg/Saki-circle.webp"></li>
+        <li routerLink="/character/7"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 7}" src="https://i.ibb.co/C8R24Gs/Honami-circle.webp"></li>
+        <li routerLink="/character/8"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 8}" src="https://i.ibb.co/HDRzdrd/Shiho-circle.webp"></li>
+      </ul>
+      <ul class="members" *ngSwitchCase="4">
+        <li routerLink="/character/9"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 9}" src="https://i.ibb.co/47CN3ph/Minori-circle.webp"></li>
+        <li routerLink="/character/10"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 10}" src="https://i.ibb.co/NnngfJp/Haruka-circle.webp"></li>
+        <li routerLink="/character/11"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 11}" src="https://i.ibb.co/8rh3XQQ/Airi-circle.webp"></li>
+        <li routerLink="/character/12"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 12}" src="https://i.ibb.co/F3Tf9ZQ/Shizuku-circle.webp"></li>
+      </ul>
+      <ul class="members" *ngSwitchCase="5">
+        <li routerLink="/character/13"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 13}"  src="https://i.ibb.co/ZMqP2xD/Emu-circle.webp"></li>
+        <li routerLink="/character/14"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 14}" src="https://i.ibb.co/RTJ09jZ/Nene-circle.webp"></li>
+        <li routerLink="/character/15"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 15}" src="https://i.ibb.co/BgsCCfs/Tsukasa-circle.webp"></li>
+        <li routerLink="/character/16"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 16}" src="https://i.ibb.co/MDPZDBV/Rui-circle.webp"></li>
+      </ul>
+      <ul class="members" *ngSwitchCase="6">
+        <li routerLink="/character/17"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 17}" src="https://i.ibb.co/dmn9JYL/chr-h-lb-9.webp"></li>
+        <li routerLink="/character/18"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 18}" src="https://i.ibb.co/ZS0Gz6s/Mafuyu-circle.webp"></li>
+        <li routerLink="/character/19"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 19}" src="https://i.ibb.co/6mRrg9k/Ena-circle.webp"></li>
+        <li routerLink="/character/20"><img [ngStyle]="{'border-color':unitColor}" [ngClass]="{'selected': memberId === 20}" src="https://i.ibb.co/p3vbX2B/Mizuki-circle.webp"></li>
+      </ul>
+  </div>
+  
+</div>

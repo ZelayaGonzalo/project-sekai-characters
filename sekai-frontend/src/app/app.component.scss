@@ -1,0 +1,310 @@
+/* Animated Circles CSS */
+$main:#00ccbb;
+$pink:#ff5677;
+$yellow:#ffbb34;
+$light-blue:#12aafe;
+$purple:#7866de;
+
+
+
+.circles {
+    overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.circles li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 60px;
+	height: 60px;
+	background: rgba(96, 183, 199, 1);
+	animation: animate 2s linear infinite;
+	top: 102%;
+}
+
+.circles li:nth-child(1) {
+	left: 25%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+	animation-duration: 20s;
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	background: $main;
+}
+
+.circles li:nth-child(2) {
+	left: 120%;
+	width: 70px;
+	height: 70px;
+	animation-delay: 0s;
+	animation-duration: 25s;
+    clip-path: polygon(50% 44%, 0% 100%, 100% 100%);	
+    background: $pink;
+}
+
+.circles li:nth-child(3) {
+	left: 20%;
+	width: 45px;
+	height: 45px;
+	animation-delay: 0s;
+	animation-duration: 23s;
+	clip-path: polygon(100% 7%, 0% 100%, 100% 100%);
+    filter: blur(5px);
+	background: $yellow;
+}
+
+.circles li:nth-child(4) {
+	left: 40%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 0s;
+	animation-duration: 12s;
+    clip-path: polygon(21% 25%, 0% 100%, 100% 100%);
+    background: $purple;
+}
+
+.circles li:nth-child(5) {
+	left: 35%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+	animation-duration: 18s;
+	clip-path: polygon(57% 0, 6% 48%, 100% 100%);
+	background: $light-blue;
+}
+
+.circles li:nth-child(6) {
+	left: 25%;
+	width: 90px;
+	height: 90px;
+	animation-delay: 0s;
+	animation-duration: 27s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	background: $yellow;
+}
+
+.circles li:nth-child(7) {
+	left: 35%;
+	width: 50px;
+	height: 50px;
+	animation-delay: 0s;
+	animation-duration: 32s;
+	clip-path: polygon(90% 13%, 6% 48%, 100% 100%);
+	background: $main;
+}
+
+.circles li:nth-child(8) {
+	left: 40%;
+	width: 25px;
+	height: 25px;
+	animation-delay: 0s;
+	animation-duration: 35s;
+	clip-path: polygon(51% 0, 0 100%, 100% 100%);
+	background: $purple;
+}
+
+.circles li:nth-child(9) {
+	left: 20%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 0s;
+	animation-duration: 38s;
+	clip-path: polygon(90% 13%, 6% 48%, 100% 100%);
+	background: $light-blue;
+}
+
+.circles li:nth-child(10) {
+	left: 50%;
+	width: 25px;
+	height: 25px;
+	animation-delay: 0s;
+	animation-duration: 45s;
+    clip-path: polygon(17% 0, 0 70%, 100% 100%);
+    	background: $pink;
+}
+.circles li:nth-child(11) {
+	left: 95%;
+	width: 50px;
+	height: 50px;
+	animation-delay: 0s;
+	animation-duration: 25s;
+    clip-path: polygon(57% 0, 6% 48%, 100% 100%);
+	background: $main;
+}
+
+.circles li:nth-child(12) {
+	left: 105%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 0s;
+	animation-duration: 11s;
+clip-path: polygon(100% 0, 0 70%, 100% 100%);	
+background: $purple;
+}
+.circles li:nth-child(13) {
+	left: 102%;
+    top: 50%;
+	width: 50px;
+	height: 50px;
+	animation-delay: 0s;
+	animation-duration: 16s;
+    clip-path: polygon(47% 30%, 0 70%, 100% 100%);
+    	background: $light-blue;
+}
+.circles li:nth-child(14) {
+	left: 110%;
+    bottom: 15%;
+	width: 70px;
+	height: 70px;
+	animation-delay: 0s;
+	animation-duration: 24s;
+    clip-path: polygon(100% 15%, 0 70%, 100% 100%);
+    	background: $pink;
+}
+.circles li:nth-child(15) {
+	left: 120%;
+    bottom:10%;
+	width: 50px;
+	height: 50px;
+	animation-delay: 0s;
+	animation-duration: 44s;
+    clip-path: polygon(21% 25%, 0% 100%, 100% 100%);
+	background: $yellow;
+}
+.circles li:nth-child(16) {
+	left: 120%;
+    bottom:50%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 0s;
+	animation-duration: 30s;
+    clip-path: polygon(21% 25%, 0% 100%, 100% 100%);
+	background: $yellow;
+}
+.circles li:nth-child(17) {
+	left: 110%;
+    bottom: 55%;
+	width: 70px;
+	height: 70px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+    clip-path: polygon(100% 15%, 0 70%, 100% 100%);
+    background: $pink;
+}
+.circles li:nth-child(18) {
+	left: 102%;
+    top: 20%;
+	width: 50px;
+	height: 50px;
+	animation-delay: 0s;
+	animation-duration: 20s;
+    clip-path: polygon(47% 30%, 0 70%, 100% 100%);
+    background: $light-blue;
+}
+.circles li:nth-child(19) {
+	left: 105%;
+	top: 25%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 0s;
+	animation-duration: 21s;
+clip-path: polygon(100% 0, 0 70%, 100% 100%);	
+background: $purple;
+}
+.circles li:nth-child(20) {
+	left: 95%;
+	top: 30%;
+	width: 50px;
+	height: 50px;
+	animation-delay: 0s;
+	animation-duration: 25s;
+    clip-path: polygon(57% 0, 6% 48%, 100% 100%);
+	background: $main;
+}
+.circles li:nth-child(21) {
+	left: 105%;
+	top: 60%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+	animation-duration: 20s;
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	background: $main;
+}
+
+.circles li:nth-child(22) {
+	left: 120%;
+	top: 50%;
+	width: 70px;
+	height: 70px;
+	animation-delay: 0s;
+	animation-duration: 25s;
+    clip-path: polygon(50% 44%, 0% 100%, 100% 100%);	
+    background: $pink;
+}
+
+.circles li:nth-child(23) {
+	left: 102%;
+	top: 40%;
+	width: 45px;
+	height: 45px;
+	animation-delay: 0s;
+	animation-duration: 23s;
+	clip-path: polygon(100% 7%, 0% 100%, 100% 100%);
+    filter: blur(5px);
+	background: $yellow;
+}
+
+.circles li:nth-child(24) {
+	left: 110%;
+	top: 45%;
+	width: 60px;
+	height: 60px;
+	animation-delay: 0s;
+	animation-duration: 12s;
+    clip-path: polygon(21% 25%, 0% 100%, 100% 100%);
+    background: $purple;
+}
+
+.circles li:nth-child(25) {
+	left: 105%;
+	top: 35%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+	animation-duration: 18s;
+	clip-path: polygon(57% 0, 6% 48%, 100% 100%);
+	background: $light-blue;
+}
+
+.circles li:nth-child(26) {
+	left: 105%;
+	top: 25%;
+	width: 90px;
+	height: 90px;
+	animation-delay: 0s;
+	animation-duration: 27s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	background: $yellow;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 0.2;
+	}
+	50% {
+		transform: translate(-50vh,-50vh) rotate(360deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(-100vh,-100vh) rotate(720deg);
+		opacity: 0;
+	}
+}

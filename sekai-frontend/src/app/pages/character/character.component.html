@@ -1,0 +1,83 @@
+<div class="character-page" [ngStyle]="{'backgroundImage': 'url('+member?.unit?.background}">
+    <div class="char-container">
+        <app-members-list [unitId]="member?.unit?.id" [logo]="member?.unit?.logo" [memberId]="member?.id" [unitColor]="member?.unit?.color"></app-members-list>
+        <div class="info">
+            <div class="image" >
+                <img [src]="member?.image" [ngClass]="member?.name || 'noclass'">
+                <div class="name" >
+                    <img [src]="member?.label">
+                </div>
+            </div>
+            <div class="info-details">
+                <div class="top-details">
+                    <div class="name">
+                        <div class="title">
+                            <h1>{{member?.name}}</h1>
+                        </div>
+                        <p class="original">{{member?.originalName}}</p>
+                    </div>
+                </div>
+                <div class="separator" [ngStyle]="{'backgroundColor': member?.color}">
+                    <h1>PROFILE</h1>
+                </div>
+                <div class="profile">
+                    <ul class="line">
+                        <li class="atr">
+                            <p class="highlight" [ngStyle]="{'backgroundColor': member?.color}">Gender: </p>
+                            <p>{{member?.profile?.gender}}</p>
+                        </li>
+                        <li class="atr">
+                            <p class="highlight" [ngStyle]="{'backgroundColor': member?.color}">VA:</p>
+                            <p>{{member?.profile?.va}}</p>
+                        </li>
+                        <li class="atr">
+                            <p class="highlight" [ngStyle]="{'backgroundColor': member?.color}">Birthday:</p>
+                            <p>{{member?.profile?.birthday}}</p>
+                        </li>
+                        <li class="atr">
+                            <p class="highlight" [ngStyle]="{'backgroundColor': member?.color}">Height:</p>
+                            <p>{{member?.profile?.height}}</p>
+                        </li>
+                        <li class="atr">
+                            <p class="highlight" [ngStyle]="{'backgroundColor': member?.color}">School: </p>
+                            <p>{{member?.profile?.school}}</p>
+                        </li>
+                        <li class="atr">
+                            <p class="highlight" [ngStyle]="{'backgroundColor': member?.color}">Class: </p>
+                            <p>{{member?.profile?.currentClass}}</p>
+                        </li>
+                        <li class="atr">
+                            <p class="highlight" [ngStyle]="{'backgroundColor': member?.color}">Favorite Food: </p>
+                            <p>{{member?.profile?.favFood}}</p>
+                        </li>
+                        <li class="atr">
+                            <p class="highlight" [ngStyle]="{'backgroundColor': member?.color}">Disliked Food: </p>
+                            <p>{{member?.profile?.dislikeFood}}</p>
+                        </li>
+                        <li class="atr">
+                            <p class="highlight" [ngStyle]="{'backgroundColor': member?.color}">Specialty: </p>
+                            <p>{{member?.profile?.specialty}}</p>
+                        </li>
+                        <li class="atr">
+                            <p class="highlight" [ngStyle]="{'backgroundColor': member?.color}">Weakness: </p>
+                            <p>{{member?.profile?.weakness}}</p>
+                        </li>
+                        <li class="atr">
+                            <p class="highlight" [ngStyle]="{'backgroundColor': member?.color}">Hobby:</p>
+                            <p>{{member?.profile?.hobby}}</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="intro">
+                    <div class="separator" [ngStyle]="{'backgroundColor': member?.color}">
+                        <h1>INTRODUCTION</h1>
+                    </div>
+                    <p>{{member?.profile?.intro}}</p>
+                </div>
+            </div>
+        </div>
+        
+       <app-units-list [currentUnit]="member?.unit?.id"></app-units-list>
+    </div>
+</div>

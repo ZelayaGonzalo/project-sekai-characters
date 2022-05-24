@@ -1,0 +1,46 @@
+$main:#00ccbb;
+$border-black:#545574;
+
+.border{
+    position: relative;
+    transition: 0.1s;
+    border: 2px solid $border-black;
+    border-bottom: 4px solid $border-black;
+    border-radius: 10px;
+    width: 250px;
+    height: 70px;
+    margin: 8px;
+    z-index: 10;
+    &:hover{
+        transform: scale(1.1);
+        button{
+            background-color: #00ffea;
+        }
+    }
+    button{
+        position: relative;
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+        font-weight: bold;
+        font-size: 20px;
+        color: #545574;
+        border: white 6px solid;
+        background-color: $main;
+        cursor: pointer;
+        .circles-container{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("https://i.ibb.co/RNm8BmZ/pattern1.png");
+            background-position: top;
+            background-size: contain;
+            bottom: 0;
+        }
+        p{
+            position: relative;
+            z-index: 10;
+        }
+    }
+    
+}

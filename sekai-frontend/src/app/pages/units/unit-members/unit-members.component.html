@@ -1,0 +1,23 @@
+<div class="unit-container" (mouseover)="mouseOver()" (mouseout)="mouseOut()">
+    <div  class="background" [ngStyle]="{'backgroundImage':'url('+background+')'}">
+        <div *ngIf="!right" [ngClass]="class" [ngStyle]="{'backgroundImage': 'linear-gradient(90deg, '+color+' 20%, rgba(255, 255, 255, 0) 83%)'}"></div>
+        <div *ngIf="right" [ngClass]="class" class="left" [ngStyle]="{'backgroundImage': 'linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, '+color+' 83%)'}" ></div>
+    </div>  
+    <div *ngIf="!right" class="unit-inside">
+        <div class="character">
+            <img src={{character}}>
+        </div>
+        <div class="logo">
+            <img src={{logo}}>
+        </div>
+    </div>
+    <div *ngIf="right" class="unit-inside">
+        <div class="logo">
+            <img src={{logo}}>
+        </div>
+        <div class="character">
+            <img src={{character}}>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,36 @@
+$main:#00ccbb;
+$border-black:#545574;
+$black:#444466;
+$pink:#ff5677;
+$yellow:#ffbb34;
+$light-blue:#12aafe;
+$purple:#7866de;
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 50px;
+    background-color: $black;
+    transition: 0.2s;
+    .links{
+        display: flex;
+        height: 100%;
+        list-style: none;
+        color: white;
+        font-weight: bold;
+        li{
+            color: inherit;
+            margin: 0 10px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: inherit;
+            &:hover{
+                border-bottom: $main 5px solid;
+            }
+        }
+        
+    }
+}

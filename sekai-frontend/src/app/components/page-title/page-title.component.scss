@@ -1,0 +1,35 @@
+$main:#00ccbb;
+$border-black:#545574;
+$black:#444466;
+$pink:#ff5677;
+$yellow:#ffbb34;
+$light-blue:#12aafe;
+$purple:#7866de;
+
+
+h1{
+    color: $black;
+    font-size: 40px;
+    text-shadow: 2px 0px 2px $main;
+}
+.subtitle{
+    height: 40px;
+    width: 20vw;
+    background-color: $black;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: $main 5px solid;
+    .pointer{
+        width: 20px;
+        height: 20px;
+        clip-path: polygon(86% 54%, 0 0, 0 100%);
+        background-color: $pink;
+        margin-left: 5%;
+    }
+    p{
+        color: white;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+}

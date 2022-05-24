@@ -1,0 +1,45 @@
+.unit-list-container{
+    margin: 50px 0;
+    width: 100%;
+    min-height: 120px;
+    background-color: white;
+    ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-wrap: wrap;
+        li{
+            height: 100%;
+            cursor: pointer;
+            filter: grayscale(1);
+            transition: 0.2s;
+            &:hover{
+                filter: grayscale(0);
+                transform: scale(1.05);
+            }
+            img{
+                height: 100px;
+            }
+        }
+        .selected{
+            filter: grayscale(0);
+        }
+    }
+}
+
+@media screen and(max-width:900px) {
+    .unit-list-container{
+        ul{
+            li{
+                img{
+                    height: 60px;
+                }
+            }
+            .selected{
+
+            }
+        }
+    }
+}

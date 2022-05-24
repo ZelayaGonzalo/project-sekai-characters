@@ -1,0 +1,41 @@
+<div class="unit-details-container" [ngStyle]="{'backgroundImage':'url('+unit?.background+')'}">
+    <app-units-list [currentUnit]="unitID"></app-units-list>
+    <section class="characters">
+        <div *ngFor="let member of sort()" class="character" [routerLink]="'/character/'+member.id">
+            <div  class="charImage" [ngClass]="member.name">
+                <img [src]="member.image">
+                <div  class="name" [ngStyle]="{'backgroundColor': unit?.color}">
+                    <p>{{member.name}}</p>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="top">
+            <div class="logo">
+                <img [src]="unit?.logo">
+            </div>
+        </div>
+        <div class="unit-info">
+            <p class="description">
+                {{unit?.intro}}
+             </p>
+        </div>
+  
+    </section>
+    <section class="section">
+        <div class="sekai">
+            <div class="sekai-desc">
+                <p>{{unit?.sekaiDesc}}</p>
+                <img [src]="unit?.background">
+            </div>
+            <img [src]="unit?.sekaiIcon">
+        </div>
+    </section>
+    
+
+    <app-units-list [currentUnit]="unitID"></app-units-list>
+
+</div>

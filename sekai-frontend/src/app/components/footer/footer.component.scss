@@ -1,0 +1,21 @@
+$main:#00ccbb;
+$border-black:#545574;
+$black:#444466;
+$pink:#ff5677;
+$yellow:#ffbb34;
+$light-blue:#12aafe;
+$purple:#7866de;
+.footer-container{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: white;
+        font-size: 12px;
+    }
+}

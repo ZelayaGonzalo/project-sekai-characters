@@ -1,0 +1,351 @@
+.unit-details-container{
+    padding-top: 50px;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-y: hidden;
+    .top{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        .logo{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            img{
+                height: 100%;
+            }
+        }
+    }
+    .characters{
+        width: 100%;
+        display: flex;
+        height: 80vh;
+        justify-content: center;
+        min-height: 700px;
+        .character{
+            position: relative;
+            display: flex;
+            align-self: flex-end;
+            justify-content: center;
+            margin: 0;
+            cursor: pointer;
+            transition: 0.2s ease-out;
+            height: 100%;
+            width: 250px;
+            &:hover{
+                transform: scale(1.1);
+                z-index: 3;
+            }
+            .name{
+                position: absolute;
+                background-color: #ee1166;
+                padding: 10px;
+                transform: rotate(-15deg);
+                p{
+                    color: white;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                }
+            }
+            img{
+                height: 100%;
+            }
+        }
+        .charImage{
+            display: flex;
+            align-items: flex-end;
+            position: absolute;
+            bottom: 0;
+            pointer-events: none;
+            height: 100%;
+        }
+        .An{
+            height: percentage(160/178);
+            .name{
+                bottom: 50%;
+                left: 10%;
+            }
+        }
+        .Kohane{
+            height: percentage(156/178);
+            z-index: 2;
+            .name{
+                bottom: 60%;
+            }
+        }
+        .Akito{
+            height: percentage(174/178);
+            .name{
+                bottom: 55%;
+            }
+        }
+        .Toya{
+            height: 100%;
+            right: 100px;
+            .name{
+                bottom: 40%;
+                right: 10%;
+            }
+        }
+        .Ichika{
+            height: percentage(161/166);
+            .name{
+                bottom: 55%;
+                left: 10%;
+            }
+        }
+        .Saki{
+            height: percentage(159/166);
+            z-index: 2;
+            bottom: -50px;
+            .name{
+                bottom: 60%;
+                left: 30%;
+            }
+        }
+        .Honami{
+            height: 100%;
+            .name{
+                bottom: 40%;
+                right: 10%;
+            }
+        }
+        .Shiho{
+            height: percentage(184/166);
+            .name{
+                bottom: 30%;
+
+            }
+        }
+        .Airi{
+            height: percentage(161/168);
+            bottom: 30px;
+            .name{
+                bottom: 55%;
+                left: 30%;
+            }
+        }
+        .Haruka{
+            height: percentage(163/168);
+            margin-left: -100px;
+            margin-right: 0;
+            z-index: 1;
+            .name{
+                bottom: 60%;
+                left: 30%;
+            }
+        }
+        .Minori{
+            height: percentage(158/168);
+            z-index: 2;
+            .name{
+                bottom: 52%;
+                left: 10%;
+            }
+        }
+        .Shizuku{
+            height: 100%;
+            margin-left: -120px;
+            margin-right: 0;
+            .name{
+                bottom: 57%;
+                left: 40%;
+            
+            }
+        }
+        .Rui{
+            height: 100%;
+            .name{
+                bottom: 55%;
+                left: 30%;
+            }
+        }
+        .Emu{
+            height: percentage(153/180);
+            z-index: 1;
+            .name{
+                bottom: 55%;
+                left: 30%;
+            }
+        }
+        .Tsukasa{
+            margin: 0 -200px;
+            height: 107%;
+            z-index: 2;
+            .name{
+                bottom: 55%;
+                left: 30%;
+            }
+        }
+        .Nene{
+            height: percentage(156/180);
+            left: -90%;
+            z-index: 0;
+            .name{
+                bottom: 55%;
+                left: 30%;
+            }
+        }
+        .Mizuki{
+            height: 100%;
+            .name{
+                bottom: 55%;
+                left: 30%;
+            }
+        }
+        .Kanade{
+            height: percentage(135/163);
+            z-index: 1;
+            .name{
+                bottom: 55%;
+                left: 30%;
+            }
+        }   
+        .Mafuyu{
+            height: percentage(158/163);
+            z-index: 2;
+            .name{
+                bottom: 55%;
+                left: 30%;
+            }
+        }
+        .Ena{
+            height: percentage(158/163);
+            .name{
+                bottom: 55%;
+                left: 30%;
+            }
+        }     
+    }
+    .section{
+        width: 100%;
+        background-color: white;
+        position: relative;
+        z-index: 2;
+    }
+    .unit-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .description{
+            width: 60%;
+            padding: 20px;
+        }
+    }
+    .sekai{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .sekai-desc{
+            padding: 20px;
+            border-radius: 20px;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 70%;
+            }
+        }
+        img{
+            width: 15%;
+        }
+    }
+}
+
+.title{
+    color: white;
+    font-size: 80px;
+    font-weight: 700;
+    text-shadow: 2px 0px 2px #ee1166;
+}
+
+@media screen and(max-width:900px) {
+    .unit-details-container{
+        .characters{
+            height: 50vh;
+            min-height: 350px;
+            .character{
+                .charImage{
+                    .name{
+                        padding: 5px;
+                        text-align: center;
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .Toya{
+                    right: 2%;
+                }
+                .Saki{
+                    bottom: -5%;
+                }
+            }
+        }
+        .top{
+            height: 100px;
+            .logo{
+
+            }
+        }
+        .unit-info{
+          
+            .description{
+                width: 90%;
+                padding: 5px;
+            }
+        }
+        .sekai{
+            flex-direction: column-reverse;
+            .sekai-desc{
+                padding: 5px;
+                width: 90%;
+                img{
+                    width: 90%;
+                }
+            }
+            img{
+                width: 40%;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:400px) {
+    .unit-details-container{
+        .characters{
+            height: 30vh;
+            min-height: 350px;
+            .character{
+                .charImage{
+                    .name{
+                        padding: 2px;
+                        text-align: center;
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .Toya{
+                    right: 5px;
+                }
+                .Saki{
+                    bottom: -5%;
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,46 @@
+.top{
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    img{
+        height: 100px;
+    }
+    .members{
+        display: flex;
+        cursor: pointer;
+        li{
+            margin: 5px;
+            img{
+                height: 100px;
+            }
+            .selected{
+                border: 5px dotted;
+                border-radius: 50%;
+            }
+        }
+        
+    }
+}
+@media screen and(max-width:500px) {
+    .top{
+        .members{
+            li{
+                margin: 2px;
+                img{
+                    height: 80px;
+                }
+                .selected{
+                    border: 5px dotted;
+                    border-radius: 50%;
+                }
+            }
+            
+        }
+    }
+}
